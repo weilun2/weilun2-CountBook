@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright (c) weilun2, CUMPT301, University of Alberta - All Rights Reserved. You may use,distribute, or modify this code under terms and condition of the Code of Students Behavior at Univerisity og Alberta
+  -->
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <TextView
+        android:id="@+id/value"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/name"
+        app:layout_constraintRight_toRightOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/name" />
+
+    <EditText
+        android:id="@+id/comment"
+        android:layout_width="300dp"
+        android:layout_height="75dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="30dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Comment"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="@+id/value"
+        app:layout_constraintRight_toRightOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/value" />
+
+    <Button
+        android:id="@+id/increment"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        android:text="increment"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="365dp" />
+
+    <Button
+        android:id="@+id/decrement"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        android:text="decrement"
+        tools:layout_editor_absoluteX="242dp"
+        tools:layout_editor_absoluteY="365dp" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
+        android:text="reset"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="42dp" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="110dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
+        android:text="delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="242dp" />
+
+    <Button
+        android:id="@+id/save"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
+        android:text="save"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="277dp" />
+</android.support.constraint.ConstraintLayout>
